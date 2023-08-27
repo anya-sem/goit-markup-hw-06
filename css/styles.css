@@ -560,7 +560,9 @@ nav {
       url(../images/hero/hero-background-image-tablet.jpg);
   }
 }
-@media only screen and (min-width: 768px) and (min-resolution: 192dpi) {
+@media only screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
   .hero-section {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -580,7 +582,9 @@ nav {
       url(../images/hero/hero-background-image-desktop.jpg);
   }
 }
-@media only screen and (min-width: 1158px) and (min-resolution: 192dpi) {
+@media only screen and (min-width: 1158px) and (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
   .hero-section {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
