@@ -57,6 +57,15 @@
             </li>
           </ul>
         </address>
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="burger-menu-icon" width="32" height="22">
+            <use href="./images/icons.svg#burger-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -76,7 +85,7 @@
           <ul class="benefits-list list">
             <li class="benefits-list-item">
               <div class="benefits-icon-wrapper">
-                <svg class="icon-antenna" width="64" height="64">
+                <svg class="icon-benefits" width="64" height="64">
                   <use href="./images/icons.svg#icon-antenna"></use>
                 </svg>
               </div>
@@ -88,7 +97,7 @@
             </li>
             <li class="benefits-list-item">
               <div class="benefits-icon-wrapper">
-                <svg class="icon-clock" width="64" height="64">
+                <svg class="icon-benefits" width="64" height="64">
                   <use href="./images/icons.svg#icon-clock"></use>
                 </svg>
               </div>
@@ -100,7 +109,7 @@
             </li>
             <li class="benefits-list-item">
               <div class="benefits-icon-wrapper">
-                <svg class="icon-diagram" width="64" height="64">
+                <svg class="icon-benefits" width="64" height="64">
                   <use href="./images/icons.svg#icon-diagram"></use>
                 </svg>
               </div>
@@ -112,7 +121,7 @@
             </li>
             <li class="benefits-list-item">
               <div class="benefits-icon-wrapper">
-                <svg class="icon-astronaut" width="64" height="64">
+                <svg class="icon-benefits" width="64" height="64">
                   <use href="./images/icons.svg#icon-astronaut"></use>
                 </svg>
               </div>
@@ -132,6 +141,10 @@
           <ul class="occupation-list list">
             <li class="occupation-list-item">
               <img
+                srcset="
+                  ./images/main-section-1/img-1.jpg    1x,
+                  ./images/main-section-1/img-1@2x.jpg 2x
+                "
                 src="./images/main-section-1/img-1.jpg"
                 alt="Монітор комп'ютера з зображенням сайту"
                 class="occupation-img"
@@ -140,6 +153,10 @@
             </li>
             <li class="occupation-list-item">
               <img
+                srcset="
+                  ./images/main-section-1/img-2.jpg    1x,
+                  ./images/main-section-1/img-2@2x.jpg 2x
+                "
                 src="./images/main-section-1/img-2.jpg"
                 alt="Мессенджер на екрані телефону"
                 class="occupation-img"
@@ -148,6 +165,10 @@
             </li>
             <li class="occupation-list-item">
               <img
+                srcset="
+                  ./images/main-section-1/img-3.jpg    1x,
+                  ./images/main-section-1/img-3@2x.jpg 2x
+                "
                 src="./images/main-section-1/img-3.jpg"
                 alt="Телефон та ноутбук із зображенням дизайну додатку"
                 class="occupation-img"
@@ -159,11 +180,15 @@
       </section>
       <!-- Section 3 - Team-->
       <section class="team-section">
-        <div class="container">
+        <div class="team-container container">
           <h2 class="team-title">Our Team</h2>
           <ul class="team-list list">
             <li class="team-list-item">
               <img
+                srcset="
+                  ./images/main-section-2/img-3.jpg    1x,
+                  ./images/main-section-2/img-3@2x.jpg 2x
+                "
                 src="./images/main-section-2/img-3.jpg"
                 alt="Хлопець брюнет з бородою у сорочці"
                 class="team-img"
@@ -218,6 +243,10 @@
             </li>
             <li class="team-list-item">
               <img
+                srcset="
+                  ./images/main-section-2/img-2.jpg    1x,
+                  ./images/main-section-2/img-2@2x.jpg 2x
+                "
                 src="./images/main-section-2/img-2.jpg"
                 alt="Усміхнений хлопець шатен"
                 class="team-img"
@@ -272,6 +301,10 @@
             </li>
             <li class="team-list-item">
               <img
+                srcset="
+                  ./images/main-section-2/img-1.jpg    1x,
+                  ./images/main-section-2/img-1@2x.jpg 2x
+                "
                 src="./images/main-section-2/img-1.jpg"
                 alt="Дівчина з довгим волоссям"
                 class="team-img"
@@ -326,6 +359,10 @@
             </li>
             <li class="team-list-item">
               <img
+                srcset="
+                  ./images/main-section-2/img.jpg    1x,
+                  ./images/main-section-2/img@2x.jpg 2x
+                "
                 src="./images/main-section-2/img.jpg"
                 alt="Хлопець у сірій футболці"
                 class="team-img"
@@ -383,7 +420,7 @@
       </section>
       <!-- Clients section -->
       <section class="clients-section">
-        <div class="container">
+        <div class="clients-container container">
           <h2 class="clients-title">Customers</h2>
           <ul class="clients-list list">
             <li class="clients-list-item">
@@ -608,6 +645,94 @@
         </form>
       </div>
     </div>
+
+    <!-- Mobile menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle-close js-close-menu">
+        <svg class="close-menu-icon" width="8" height="8">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+
+      <div class="mobile-menu-navigation-container">
+        <ul class="mobile-menu-list list">
+          <li class="mobile-menu-list-item">
+            <a href="./index.html" class="link">Studio</a>
+          </li>
+          <li class="mobile-menu-list-item">
+            <a href="./portfolio.html" class="link">Portfolio</a>
+          </li>
+          <li class="mobile-menu-list-item">
+            <a href="" class="link">Contacts</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="mobile-menu-contacts-container">
+        <address class="address">
+          <ul class="mobile-menu-address-list list">
+            <li class="mobile-menu-address-tel">
+              <a class="link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+            </li>
+            <li class="mobile-menu-address-email">
+              <a class="link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+        </address>
+        <ul class="mobile-menu-socials-list list">
+          <li class="mobile-menu-socials-item">
+            <a
+              class="mobile-menu-socials-link link"
+              href="https://www.instagram.com/"
+            >
+              <svg class="mobile-menu-social-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-menu-socials-item">
+            <a
+              class="mobile-menu-socials-link link"
+              href="https://twitter.com/"
+            >
+              <svg class="mobile-menu-social-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-menu-socials-item">
+            <a
+              class="mobile-menu-socials-link link"
+              href="https://www.facebook.com/"
+            >
+              <svg class="mobile-menu-social-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-menu-socials-item">
+            <a
+              class="mobile-menu-socials-link link"
+              href="https://www.linkedin.com/"
+            >
+              <svg class="mobile-menu-social-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
     <script src="./js/modal.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
