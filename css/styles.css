@@ -682,6 +682,11 @@ nav {
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
     0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
 }
+@media only screen and (max-width: 427.98px) {
+  .modal {
+    width: 320px;
+  }
+}
 .modal-button {
   position: absolute;
   display: flex;
@@ -712,7 +717,7 @@ nav {
 }
 .modal-caption {
   display: block;
-  width: 360px;
+  width: 100%;
   color: var(--dark);
   text-align: center;
   font-weight: 500;
@@ -795,10 +800,10 @@ nav {
 .modal-form-agreement-wrapper {
   margin-bottom: 24px;
 }
-.modal-form-agreement-input {
-}
+
 .modal-form-agreement {
   display: block;
+  width: 100%;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
